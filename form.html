@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+<head>
     <title>Form</title>
-</html>
+    <meta charset="utf-8">
+</head>
 
 <h1>Convert Color Values</h1>
 <p>Please enter RGB values between 0.0 and 1.0.</p>
-<form id="colorForm">
+<script src="calculations.js"></script>
+<form onsubmit="return setAction(this)">
     <label for="inputRed">Red Value:</label><br>
-    <input type="number" id="inputRed" name="inputRed"><br>
+    <input type="text" id="inputRed" name="inputRed"><br>
     <label for="inputGreen">Green Value:</label><br>
-    <input type="number" id="inputGreen" name="inputGreen"><br>
+    <input type="text" id="inputGreen" name="inputGreen"><br>
     <label for="inputBlue">Blue Value:</label><br>
-    <input type="number" id="inputBlue" name="inputBlue"><br>
-    <input type="submit" value="Submit">
+    <input type="text" id="inputBlue" name="inputBlue"><br>
+    <input type="submit" id="submit">
 </form>
-
